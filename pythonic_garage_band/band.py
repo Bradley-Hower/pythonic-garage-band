@@ -1,4 +1,5 @@
 class Band:
+  "Initializes band with band members and a band name. Keeps track of various band instances with the 'instances' list."
 
   instances = []
 
@@ -18,10 +19,12 @@ class Band:
     return cls.instances
 
 class Musician:
+  "The class of Musician is a superclass for musician types. The musician is the individual, and thus holds the persons name."
   def __init__(self, fullname):
     self.name = fullname
 
 class Guitarist(Musician):
+  "Guitarist is a type of musician, and thus is a subclass of that group. The guitarists introduce themselves as such and of course, have a guitar instrument as represented by get_instrument. Additionally, guitarists have a signiture solo."
   def __init__(self, fullname):
     Musician.__init__(self, fullname)
 
@@ -38,6 +41,7 @@ class Guitarist(Musician):
     return "face melting guitar solo"
 
 class Bassist(Musician):
+  "Bassist is a type of musician, and thus is a subclass of that group. The bassists introduce themselves as such and of course, have a bass instrument as represented by get_instrument. Additionally, bassists have a signiture solo."
   def __init__(self, fullname):
     Musician.__init__(self, fullname)
 
@@ -54,6 +58,7 @@ class Bassist(Musician):
     return "bom bom buh bom"
 
 class Drummer(Musician):
+  "Drummer is a type of musician, and thus is a subclass of that group. The drummer introduce themselves as such and of course, have a drum instrument as represented by get_instrument. Additionally, drummers have a signiture solo."
   def __init__(self, fullname):
     Musician.__init__(self, fullname)
 

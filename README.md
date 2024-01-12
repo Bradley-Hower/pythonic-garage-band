@@ -16,3 +16,4 @@ Run tests via `pytest`. To install, `pip install pytest`.
 
 ### Any tests of note?
 
+The test included test Guitarist, Drummer, and Bassist classes for __str__, __repr__, instrument and solo methods. The aforemention classes are also tested for instantiation of musicians. Bands are saved within the Band class. Lastly, bands are validated as being instantiated, holding members, a name, and player solos.
