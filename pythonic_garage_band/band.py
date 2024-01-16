@@ -40,7 +40,8 @@ class Guitarist(Musician):
   def __repr__(self):
     return  f"Guitarist instance. Name = {self.name}"
   
-  def get_instrument(self):
+  @staticmethod
+  def get_instrument():
     return "guitar"
   
   def play_solo(self):
@@ -57,7 +58,8 @@ class Bassist(Musician):
   def __repr__(self):
     return  f"Bassist instance. Name = {self.name}"
   
-  def get_instrument(self):
+  @staticmethod
+  def get_instrument():
     return "bass"
   
   def play_solo(self):
@@ -74,13 +76,9 @@ class Drummer(Musician):
   def __repr__(self):
     return  f"Drummer instance. Name = {self.name}"
   
-  def get_instrument(self):
+  @staticmethod
+  def get_instrument():
     return "drums"
   
   def play_solo(self):
     return "rattle boom crash"
-
-
-
-
-# joan = Guitarist('Joan Jett')
